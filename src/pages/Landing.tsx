@@ -1,6 +1,7 @@
 import { Link } from '@tanstack/react-router'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
+import { DottedPattern, WavyLines, WaveDivider } from '../components/DecorativeEffects'
 
 const cookies = [
   { name: 'Chunk Monster', tag: 'Dark chocolate + sea salt', price: '₦3,500', img: '/images/cookie-1.jpg', benefit: 'Classic' },
@@ -24,6 +25,8 @@ export default function Landing() {
       {/* Hero — contained with bg image */}
       <section className="px-4 pt-4 md:px-6 md:pt-6">
         <div className="relative flex items-end overflow-hidden rounded-3xl md:rounded-4xl" style={{ height: '65vh', minHeight: 400 }}>
+          <DottedPattern opacity={0.08} spacing={30} dotSize={1.2} color="#d4944d" />
+          <WavyLines opacity={0.06} color="#6d4f34" />
           <div className="absolute inset-0">
             <img src="/images/hero-bg.jpg" alt="" className="h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent" />
@@ -40,6 +43,8 @@ export default function Landing() {
           </div>
         </div>
       </section>
+
+      <WaveDivider opacity={0.12} color="#d4944d" />
 
       {/* Intro + cookie list */}
       <section className="px-6 py-14 md:px-12 md:py-20">
@@ -128,6 +133,7 @@ export default function Landing() {
 
       {/* Our Bakery — full brand section */}
       <section className="relative overflow-hidden bg-brand-500 px-6 py-20 md:py-32 md:px-12">
+        <WavyLines opacity={0.08} color="#fff" />
         <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
         <div className="mx-auto flex max-w-6xl flex-col items-center md:flex-row">
           <div className="relative z-10 -mb-16 rounded-3xl bg-warm-900 p-8 text-white md:-mr-20 md:mb-0 md:p-12" style={{ maxWidth: 400 }}>
