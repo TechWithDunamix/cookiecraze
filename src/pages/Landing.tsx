@@ -3,12 +3,12 @@ import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 
 const cookies = [
-  { name: 'Chunk Monster', tag: 'Dark chocolate + sea salt', price: '₦3,500', img: '', benefit: 'Classic' },
-  { name: 'Sugar Rush', tag: 'Vanilla bean + rainbow sprinkles', price: '₦3,000', img: '', benefit: 'Sweet' },
-  { name: 'Nut Heaven', tag: 'Pecan + brown butter + caramel', price: '₦4,000', img: '', benefit: 'Indulgent' },
-  { name: 'Double Trouble', tag: 'Double chocolate + fudge', price: '₦3,800', img: '', benefit: 'Rich' },
-  { name: 'Oat Dream', tag: 'Oats + honey + cinnamon', price: '₦3,500', img: '', benefit: 'Wholesome' },
-  { name: 'Berry Bliss', tag: 'White choc + raspberry', price: '₦4,000', img: '', benefit: 'Fruity' },
+  { name: 'Chunk Monster', tag: 'Dark chocolate + sea salt', price: '₦3,500', img: '/images/cookie-1.jpg', benefit: 'Classic' },
+  { name: 'Sugar Rush', tag: 'Vanilla bean + rainbow sprinkles', price: '₦3,000', img: '/images/cookie-2.jpg', benefit: 'Sweet' },
+  { name: 'Nut Heaven', tag: 'Pecan + brown butter + caramel', price: '₦4,000', img: '/images/cookie-3.jpg', benefit: 'Indulgent' },
+  { name: 'Double Trouble', tag: 'Double chocolate + fudge', price: '₦3,800', img: '/images/cookie-1.jpg', benefit: 'Rich' },
+  { name: 'Oat Dream', tag: 'Oats + honey + cinnamon', price: '₦3,500', img: '/images/cookie-2.jpg', benefit: 'Wholesome' },
+  { name: 'Berry Bliss', tag: 'White choc + raspberry', price: '₦4,000', img: '/images/cookie-3.jpg', benefit: 'Fruity' },
 ]
 
 const flavors = [
@@ -21,18 +21,22 @@ const flavors = [
 export default function Landing() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative flex items-end overflow-hidden" style={{ height: '70vh', minHeight: 420 }}>
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-400/30 via-warm-50 to-brand-400/10" />
-        <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(circle at 25% 25%, #d4944d 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
-        <div className="relative z-10 w-full px-6 pb-14 md:px-12 md:pb-20">
-          <div className="mx-auto max-w-6xl">
-            <motion.span initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="inline-block rounded-full bg-brand-500 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-white">Baked Fresh Daily</motion.span>
-            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="font-display mt-4 text-7xl leading-[0.85] tracking-[-2px] text-warm-900 md:text-8xl lg:text-9xl">
-              Cookie
-              <br />
-              <span className="text-brand-500">Craze</span>
-            </motion.h1>
+      {/* Hero — contained with bg image */}
+      <section className="px-4 pt-4 md:px-6 md:pt-6">
+        <div className="relative flex items-end overflow-hidden rounded-3xl md:rounded-4xl" style={{ height: '65vh', minHeight: 400 }}>
+          <div className="absolute inset-0">
+            <img src="/images/hero-bg.jpg" alt="" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent" />
+          </div>
+          <div className="relative z-10 w-full px-8 pb-14 md:px-14 md:pb-20">
+            <div className="mx-auto max-w-6xl">
+              <motion.span initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="inline-block rounded-full bg-brand-500 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-white">Baked Fresh Daily</motion.span>
+              <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="font-display mt-4 text-7xl leading-[0.85] tracking-[-2px] text-warm-900 md:text-8xl lg:text-9xl">
+                Cookie
+                <br />
+                <span className="text-brand-500">Craze</span>
+              </motion.h1>
+            </div>
           </div>
         </div>
       </section>
@@ -55,9 +59,9 @@ export default function Landing() {
                   transition={{ delay: i * 0.06 }}
                   className="group relative w-[340px] shrink-0"
                 >
-                  <div className="relative h-72 overflow-hidden rounded-3xl border border-warm-200/40 bg-gradient-to-br from-brand-100 to-brand-200/50">
-                    <div className="absolute inset-0 flex items-center justify-center text-8xl opacity-60 select-none">🍪</div>
-                    <div className="absolute inset-0 flex items-center justify-center bg-brand-500/0 transition-all duration-300 md:opacity-0 md:group-hover:bg-brand-500/20 md:group-hover:opacity-100">
+                  <div className="relative h-72 overflow-hidden rounded-3xl border border-warm-200/40 bg-warm-50">
+                    <img src={c.img || ''} alt={c.name} className="h-full w-full object-cover" />
+                    <div className="absolute inset-0 flex items-center justify-center bg-brand-500/0 transition-all duration-300 md:opacity-0 md:group-hover:bg-brand-500/30 md:group-hover:opacity-100">
                       <span className="rounded-full bg-white px-6 py-2 font-display text-xl tracking-wide text-warm-900">{c.price}</span>
                     </div>
                     <span className="absolute bottom-4 right-4 rounded-full bg-white/90 px-4 py-1.5 font-display text-lg tracking-wide text-warm-900 md:hidden">{c.price}</span>
@@ -96,8 +100,12 @@ export default function Landing() {
             </p>
           </div>
           <div className="mt-12 grid grid-cols-2 gap-6">
-            <div className="flex aspect-square items-center justify-center rounded-3xl bg-gradient-to-br from-brand-200 to-brand-300/50 text-8xl">🧈</div>
-            <div className="flex aspect-square items-center justify-center rounded-3xl bg-gradient-to-br from-choco-400/30 to-warm-100 text-8xl">🍫</div>
+            <div className="overflow-hidden rounded-3xl" style={{ aspectRatio: '1/1' }}>
+              <img src="/images/cookie-2.jpg" alt="Fresh ingredients" className="h-full w-full object-cover" />
+            </div>
+            <div className="overflow-hidden rounded-3xl" style={{ aspectRatio: '1/1' }}>
+              <img src="/images/cookie-3.jpg" alt="Baked goods" className="h-full w-full object-cover" />
+            </div>
           </div>
         </div>
       </section>
@@ -106,8 +114,8 @@ export default function Landing() {
       {flavors.map((f, i) => (
         <section key={f.name} className={`px-6 py-16 md:px-12 md:py-24 ${i % 2 === 1 ? 'bg-warm-50/50' : ''}`}>
           <div className={`mx-auto flex max-w-5xl flex-col items-center gap-8 md:flex-row ${i % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
-            <div className="flex h-48 w-48 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-brand-200 to-warm-100 text-7xl md:h-64 md:w-64 md:text-8xl">
-              {['🍪', '🧁', '🥨', '🍵'][i]}
+            <div className="h-48 w-48 shrink-0 overflow-hidden rounded-full md:h-64 md:w-64">
+              <img src={['/images/cookie-1.jpg', '/images/cookie-2.jpg', '/images/cookie-3.jpg', '/images/hero-bg.jpg'][i]} alt={f.name} className="h-full w-full object-cover" />
             </div>
             <div className={`flex-1 ${i % 2 === 1 ? 'md:text-right' : ''}`}>
               <span className="text-xs font-semibold uppercase tracking-widest text-brand-500">Flavor {String(i + 1).padStart(2, '0')}</span>
@@ -134,8 +142,8 @@ export default function Landing() {
               meant to be shared — though we won't judge if you keep them all to yourself.
             </p>
           </div>
-          <div className="relative flex h-72 w-full items-center justify-center overflow-hidden rounded-3xl bg-brand-300 md:h-[480px] md:w-[600px] lg:w-[700px]">
-            <span className="text-[12rem] md:text-[16rem] select-none">🍪</span>
+          <div className="relative overflow-hidden rounded-3xl bg-brand-300 md:h-[480px] md:w-[600px] lg:w-[700px]">
+            <img src="/images/hero-bg.jpg" alt="Our bakery" className="h-full w-full object-cover" />
           </div>
         </div>
       </section>
