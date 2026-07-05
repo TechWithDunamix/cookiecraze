@@ -1,4 +1,4 @@
-export function DottedPattern({ opacity = 0.06, spacing = 28, dotSize = 1.5, color = '#d4944d' }) {
+export function DottedPattern({ spacing = 28, dotSize = 1.5, color = '#d4944d' }) {
   return (
     <div
       className="pointer-events-none absolute inset-0 z-0"

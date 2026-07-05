@@ -25,7 +25,7 @@ export default function Landing() {
       {/* Hero — contained with bg image */}
       <section className="px-4 pt-4 md:px-6 md:pt-6">
         <div className="relative flex items-end overflow-hidden rounded-3xl md:rounded-4xl" style={{ height: '65vh', minHeight: 400 }}>
-          <DottedPattern opacity={0.08} spacing={30} dotSize={1.2} color="#d4944d" />
+          <DottedPattern spacing={30} dotSize={1.2} color="#d4944d" />
           <WavyLines opacity={0.06} color="#6d4f34" />
           <div className="absolute inset-0">
             <img src="/images/hero-bg.jpg" alt="" className="h-full w-full object-cover" />
