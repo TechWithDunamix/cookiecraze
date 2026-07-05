@@ -4,12 +4,12 @@ import { ArrowRight } from 'lucide-react'
 import { DottedPattern, WavyLines, WaveDivider } from '../components/DecorativeEffects'
 
 const cookies = [
-  { name: 'Chunk Monster', tag: 'Dark chocolate + sea salt', price: '$3.50', img: '/images/cookie-1.jpg', benefit: 'Classic' },
-  { name: 'Sugar Rush', tag: 'Vanilla bean + rainbow sprinkles', price: '$3.00', img: '/images/cookie-2.jpg', benefit: 'Sweet' },
-  { name: 'Nut Heaven', tag: 'Pecan + brown butter + caramel', price: '$4.00', img: '/images/cookie-3.jpg', benefit: 'Indulgent' },
-  { name: 'Double Trouble', tag: 'Double chocolate + fudge', price: '$3.80', img: '/images/cookie-1.jpg', benefit: 'Rich' },
-  { name: 'Oat Dream', tag: 'Oats + honey + cinnamon', price: '$3.50', img: '/images/cookie-2.jpg', benefit: 'Wholesome' },
-  { name: 'Berry Bliss', tag: 'White choc + raspberry', price: '$4.00', img: '/images/cookie-3.jpg', benefit: 'Fruity' },
+  { name: 'Chunk Monster', tag: 'Dark chocolate + sea salt', price: '$3.50', img: '/images/chocolate-chip.jpg', benefit: 'Classic' },
+  { name: 'Sugar Rush', tag: 'Vanilla bean + rainbow sprinkles', price: '$3.00', img: '/images/sugar-cookie.jpg', benefit: 'Sweet' },
+  { name: 'Nut Heaven', tag: 'Pecan + brown butter + caramel', price: '$4.00', img: '/images/pecan-caramel.jpg', benefit: 'Indulgent' },
+  { name: 'Double Trouble', tag: 'Double chocolate + fudge', price: '$3.80', img: '/images/chocolate-chip.jpg', benefit: 'Rich' },
+  { name: 'Oat Dream', tag: 'Oats + honey + cinnamon', price: '$3.50', img: '/images/sugar-cookie.jpg', benefit: 'Wholesome' },
+  { name: 'Berry Bliss', tag: 'White choc + raspberry', price: '$4.00', img: '/images/pecan-caramel.jpg', benefit: 'Fruity' },
 ]
 
 const flavors = [
@@ -28,7 +28,7 @@ export default function Landing() {
           <DottedPattern spacing={30} dotSize={1.2} color="#d4944d" />
           <WavyLines opacity={0.06} color="#6d4f34" />
           <div className="absolute inset-0">
-            <img src="/images/hero-bg.jpg" alt="" className="h-full w-full object-cover" />
+            <img src="/images/cookies-hero.jpg" alt="" className="h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent" />
           </div>
           <div className="relative z-10 w-full px-8 pb-14 md:px-14 md:pb-20">
@@ -106,10 +106,10 @@ export default function Landing() {
           </div>
           <div className="mt-12 grid grid-cols-2 gap-6">
             <div className="overflow-hidden rounded-3xl" style={{ aspectRatio: '1/1' }}>
-              <img src="/images/cookie-2.jpg" alt="Fresh ingredients" className="h-full w-full object-cover" />
+              <img src="/images/sugar-cookie.jpg" alt="Fresh ingredients" className="h-full w-full object-cover" />
             </div>
             <div className="overflow-hidden rounded-3xl" style={{ aspectRatio: '1/1' }}>
-              <img src="/images/cookie-3.jpg" alt="Baked goods" className="h-full w-full object-cover" />
+              <img src="/images/pecan-caramel.jpg" alt="Baked goods" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function Landing() {
         <section key={f.name} className={`px-6 py-16 md:px-12 md:py-24 ${i % 2 === 1 ? 'bg-warm-50/50' : ''}`}>
           <div className={`mx-auto flex max-w-5xl flex-col items-center gap-8 md:flex-row ${i % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
             <div className="h-48 w-48 shrink-0 overflow-hidden rounded-full md:h-64 md:w-64">
-              <img src={['/images/cookie-1.jpg', '/images/cookie-2.jpg', '/images/cookie-3.jpg', '/images/hero-bg.jpg'][i]} alt={f.name} className="h-full w-full object-cover" />
+              <img src={['/images/chocolate-chip.jpg', '/images/sugar-cookie.jpg', '/images/pecan-caramel.jpg', '/images/cookies-hero.jpg'][i]} alt={f.name} className="h-full w-full object-cover" />
             </div>
             <div className={`flex-1 ${i % 2 === 1 ? 'md:text-right' : ''}`}>
               <span className="text-xs font-semibold uppercase tracking-widest text-brand-500">Flavor {String(i + 1).padStart(2, '0')}</span>
@@ -149,7 +149,7 @@ export default function Landing() {
             </p>
           </div>
           <div className="relative overflow-hidden rounded-3xl bg-brand-300 md:h-[480px] md:w-[600px] lg:w-[700px]">
-            <img src="/images/hero-bg.jpg" alt="Our bakery" className="h-full w-full object-cover" />
+            <img src="/images/cookies-hero.jpg" alt="Our bakery" className="h-full w-full object-cover" />
           </div>
         </div>
       </section>
