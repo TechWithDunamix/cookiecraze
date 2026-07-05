@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-wrap justify-between gap-12">
           <div className="max-w-xs">
             <Link to="/" className="flex items-center gap-3">
-              <span className="text-2xl">🍪</span>
+              <img src="/logo.png" alt="Cookie Craze" className="h-9 w-auto" />
               <span className="font-display text-xl tracking-wide">Cookie <span className="text-brand-500">Craze</span></span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-warm-800/50">Freshly baked cookies made with love. Every batch, every day.</p>

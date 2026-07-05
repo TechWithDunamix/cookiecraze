@@ -12,7 +12,7 @@ export default function Nav() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-warm-200/50">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3 md:px-10">
         <Link to="/" className="flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500 text-white text-xl">🍪</span>
+          <img src="/logo.png" alt="Cookie Craze" className="h-10 w-auto" />
           <span className="font-display text-2xl tracking-wide text-warm-900">Cookie <span className="text-brand-500">Craze</span></span>
         </Link>
         <div className="flex items-center gap-1">
