@@ -4,33 +4,33 @@ const categories = [
   {
     name: 'Classic Cookies',
     items: [
-      { name: 'Chocolate Chunk', price: '₦3,500', desc: 'Dark chocolate chunks, golden edges, gooey center — the one that started it all.', tag: 'Best Seller' },
-      { name: 'Sugar Cookie', price: '₦3,000', desc: 'Vanilla bean, rainbow sprinkles, soft-baked perfection.', tag: 'Kid Favorite' },
-      { name: 'Double Fudge', price: '₦3,800', desc: 'Cocoa dough, dark fudge chunks, extra chocolatey.', tag: 'Rich' },
+      { name: 'Chocolate Chunk', price: '$3.50', desc: 'Dark chocolate chunks, golden edges, gooey center — the one that started it all.', tag: 'Best Seller' },
+      { name: 'Sugar Cookie', price: '$3.00', desc: 'Vanilla bean, rainbow sprinkles, soft-baked perfection.', tag: 'Kid Favorite' },
+      { name: 'Double Fudge', price: '$3.80', desc: 'Cocoa dough, dark fudge chunks, extra chocolatey.', tag: 'Rich' },
     ],
   },
   {
     name: 'Nutty & Caramel',
     items: [
-      { name: 'Pecan Caramel', price: '₦4,000', desc: 'Brown butter, toasted pecans, gooey caramel center.', tag: 'Indulgent' },
-      { name: 'Salted Pretzel', price: '₦3,800', desc: 'Pretzel crunch, caramel, flaky sea salt — sweet & salty.', tag: 'Popular' },
-      { name: 'Oatmeal Raisin', price: '₦3,500', desc: 'Rolled oats, cinnamon, honey, plump raisins — a classic done right.', tag: 'Wholesome' },
+      { name: 'Pecan Caramel', price: '$4.00', desc: 'Brown butter, toasted pecans, gooey caramel center.', tag: 'Indulgent' },
+      { name: 'Salted Pretzel', price: '$3.80', desc: 'Pretzel crunch, caramel, flaky sea salt — sweet & salty.', tag: 'Popular' },
+      { name: 'Oatmeal Raisin', price: '$3.50', desc: 'Rolled oats, cinnamon, honey, plump raisins — a classic done right.', tag: 'Wholesome' },
     ],
   },
   {
     name: 'Fruit & Specialty',
     items: [
-      { name: 'Raspberry White Choc', price: '₦4,000', desc: 'Tart raspberry, creamy white chocolate, tender crumb.', tag: 'Fruity' },
-      { name: 'Matcha White Choc', price: '₦4,000', desc: 'Earthy matcha, sweet white chocolate — beautifully balanced.', tag: 'Unique' },
-      { name: 'Red Velvet', price: '₦3,800', desc: 'Cocoa, cream cheese chips, drizzle — bakery-style decadence.', tag: 'Decadent' },
+      { name: 'Raspberry White Choc', price: '$4.00', desc: 'Tart raspberry, creamy white chocolate, tender crumb.', tag: 'Fruity' },
+      { name: 'Matcha White Choc', price: '$4.00', desc: 'Earthy matcha, sweet white chocolate — beautifully balanced.', tag: 'Unique' },
+      { name: 'Red Velvet', price: '$3.80', desc: 'Cocoa, cream cheese chips, drizzle — bakery-style decadence.', tag: 'Decadent' },
     ],
   },
   {
     name: 'Brownies & Bars',
     items: [
-      { name: 'Fudge Brownie', price: '₦4,500', desc: 'Dense, fudgy, crackly top — chocolate in its purest form.', tag: 'Rich' },
-      { name: 'Blondie', price: '₦4,000', desc: 'Brown butter, white chocolate, macadamia — golden and buttery.', tag: 'Buttery' },
-      { name: 'Brookie', price: '₦4,500', desc: 'Brownie + cookie in one. The best of both worlds.', tag: 'Hybrid' },
+      { name: 'Fudge Brownie', price: '$4.50', desc: 'Dense, fudgy, crackly top — chocolate in its purest form.', tag: 'Rich' },
+      { name: 'Blondie', price: '$4.00', desc: 'Brown butter, white chocolate, macadamia — golden and buttery.', tag: 'Buttery' },
+      { name: 'Brookie', price: '$4.50', desc: 'Brownie + cookie in one. The best of both worlds.', tag: 'Hybrid' },
     ],
   },
 ]

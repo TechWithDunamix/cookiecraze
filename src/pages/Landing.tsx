@@ -4,12 +4,12 @@ import { ArrowRight } from 'lucide-react'
 import { DottedPattern, WavyLines, WaveDivider } from '../components/DecorativeEffects'
 
 const cookies = [
-  { name: 'Chunk Monster', tag: 'Dark chocolate + sea salt', price: '₦3,500', img: '/images/cookie-1.jpg', benefit: 'Classic' },
-  { name: 'Sugar Rush', tag: 'Vanilla bean + rainbow sprinkles', price: '₦3,000', img: '/images/cookie-2.jpg', benefit: 'Sweet' },
-  { name: 'Nut Heaven', tag: 'Pecan + brown butter + caramel', price: '₦4,000', img: '/images/cookie-3.jpg', benefit: 'Indulgent' },
-  { name: 'Double Trouble', tag: 'Double chocolate + fudge', price: '₦3,800', img: '/images/cookie-1.jpg', benefit: 'Rich' },
-  { name: 'Oat Dream', tag: 'Oats + honey + cinnamon', price: '₦3,500', img: '/images/cookie-2.jpg', benefit: 'Wholesome' },
-  { name: 'Berry Bliss', tag: 'White choc + raspberry', price: '₦4,000', img: '/images/cookie-3.jpg', benefit: 'Fruity' },
+  { name: 'Chunk Monster', tag: 'Dark chocolate + sea salt', price: '$3.50', img: '/images/cookie-1.jpg', benefit: 'Classic' },
+  { name: 'Sugar Rush', tag: 'Vanilla bean + rainbow sprinkles', price: '$3.00', img: '/images/cookie-2.jpg', benefit: 'Sweet' },
+  { name: 'Nut Heaven', tag: 'Pecan + brown butter + caramel', price: '$4.00', img: '/images/cookie-3.jpg', benefit: 'Indulgent' },
+  { name: 'Double Trouble', tag: 'Double chocolate + fudge', price: '$3.80', img: '/images/cookie-1.jpg', benefit: 'Rich' },
+  { name: 'Oat Dream', tag: 'Oats + honey + cinnamon', price: '$3.50', img: '/images/cookie-2.jpg', benefit: 'Wholesome' },
+  { name: 'Berry Bliss', tag: 'White choc + raspberry', price: '$4.00', img: '/images/cookie-3.jpg', benefit: 'Fruity' },
 ]
 
 const flavors = [
