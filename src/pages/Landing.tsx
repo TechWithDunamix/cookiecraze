@@ -4,12 +4,12 @@ import { ArrowRight } from 'lucide-react'
 import { DottedPattern, WavyLines, WaveDivider } from '../components/DecorativeEffects'
 
 const cookies = [
-  { name: 'Chunk Monster', tag: 'Dark chocolate + sea salt', price: '$3.50', img: '/images/chocolate-chip.jpg', benefit: 'Classic' },
-  { name: 'Sugar Rush', tag: 'Vanilla bean + rainbow sprinkles', price: '$3.00', img: '/images/sugar-cookie.jpg', benefit: 'Sweet' },
-  { name: 'Nut Heaven', tag: 'Pecan + brown butter + caramel', price: '$4.00', img: '/images/pecan-caramel.jpg', benefit: 'Indulgent' },
-  { name: 'Double Trouble', tag: 'Double chocolate + fudge', price: '$3.80', img: '/images/chocolate-chip.jpg', benefit: 'Rich' },
-  { name: 'Oat Dream', tag: 'Oats + honey + cinnamon', price: '$3.50', img: '/images/sugar-cookie.jpg', benefit: 'Wholesome' },
-  { name: 'Berry Bliss', tag: 'White choc + raspberry', price: '$4.00', img: '/images/pecan-caramel.jpg', benefit: 'Fruity' },
+  { name: 'Triple Chocolate', tag: 'Dark, milk & white chocolate', price: '$4.00', img: '/images/chocolate-chip.jpg', benefit: 'Best Seller' },
+  { name: 'Cookie Monster', tag: 'Chocolate chips + cookie chunks', price: '$4.00', img: '/images/sugar-cookie.jpg', benefit: 'Fan Favorite' },
+  { name: 'Birthday Cake', tag: 'Funfetti + cream cheese frosting', price: '$4.00', img: '/images/pecan-caramel.jpg', benefit: 'Celebration' },
+  { name: 'Mint Chocolate Chip', tag: 'Cool mint + dark chocolate', price: '$4.00', img: '/images/chocolate-chip.jpg', benefit: 'Refreshing' },
+  { name: 'Matcha White Choc', tag: 'Earthy matcha + white chips', price: '$4.00', img: '/images/sugar-cookie.jpg', benefit: 'Unique' },
+  { name: 'Oatmeal Raisin', tag: 'Oats + cinnamon + honey', price: '$3.50', img: '/images/pecan-caramel.jpg', benefit: 'Wholesome' },
 ]
 
 const flavors = [
