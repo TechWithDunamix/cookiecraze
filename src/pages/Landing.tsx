@@ -1,6 +1,6 @@
 import { Link } from '@tanstack/react-router'
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, MessageCircle } from 'lucide-react'
 import { DottedPattern, WavyLines, WaveDivider } from '../components/DecorativeEffects'
 
 const cookies = [
@@ -169,6 +169,10 @@ export default function Landing() {
             <Link to="/contact" className="group inline-flex items-center gap-2 rounded-full border border-warm-200 bg-white px-8 py-3.5 text-sm font-bold uppercase tracking-wider text-warm-800 transition-all duration-300 hover:border-warm-300">
               Find Us
             </Link>
+            <a href="https://wa.me/14434186463" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 rounded-full bg-brand-500 px-8 py-3.5 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-brand-400">
+              <MessageCircle size={18} />
+              Order Now
+            </a>
           </div>
         </div>
       </section>

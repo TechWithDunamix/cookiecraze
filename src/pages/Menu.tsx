@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { MessageCircle } from 'lucide-react'
 
 const categories = [
   {
@@ -52,6 +53,18 @@ export default function Menu() {
             Our <span className="text-brand-500">Menu</span>
           </h1>
           <p className="mt-4 max-w-lg text-sm leading-relaxed text-warm-800/50">Every cookie baked fresh daily. Gooey, golden, and absolutely irresistible. Custom orders available for every occasion.</p>
+        </div>
+
+        <div className="mb-16 text-center">
+          <a
+            href="https://wa.me/14434186463"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2.5 rounded-full bg-brand-500 px-8 py-3.5 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-brand-400"
+          >
+            <MessageCircle size={18} />
+            Order via WhatsApp
+          </a>
         </div>
 
         {categories.map((cat) => (

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { MapPin, Clock, Phone, Mail, Send, ArrowRight } from 'lucide-react'
+import { MapPin, Clock, Phone, Mail, Send, ArrowRight, MessageCircle } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 
 export default function Contact() {
@@ -19,7 +19,7 @@ export default function Contact() {
             {[
               { icon: MapPin, title: 'Location', content: '42 Cookie Lane\nVictoria Island, Lagos' },
               { icon: Clock, title: 'Hours', content: 'Mon–Fri: 7AM – 9PM\nSat: 8AM – 10PM\nSun: 9AM – 6PM' },
-              { icon: Phone, title: 'Phone', content: '+234 800 COOKIE\n+234 800 2665 433' },
+              { icon: Phone, title: 'Phone', content: '+1 443 418 6463\nOrder via WhatsApp' },
               { icon: Mail, title: 'Email', content: 'hello@cookiecraze.com\norder@cookiecraze.com' },
             ].map((info, i) => (
               <motion.div
@@ -59,8 +59,12 @@ export default function Contact() {
           </motion.div>
         </div>
 
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mx-auto mt-16 text-center">
-          <Link to="/menu" className="group inline-flex items-center gap-2 rounded-full bg-brand-500 px-8 py-3.5 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-brand-400">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mx-auto mt-12 flex flex-wrap justify-center gap-4">
+          <a href="https://wa.me/14434186463" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2.5 rounded-full bg-brand-500 px-8 py-3.5 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-brand-400">
+            <MessageCircle size={18} />
+            Order via WhatsApp
+          </a>
+          <Link to="/menu" className="group inline-flex items-center gap-2 rounded-full border border-warm-200 bg-white px-8 py-3.5 text-sm font-bold uppercase tracking-wider text-warm-800 transition-all duration-300 hover:border-warm-300">
             Browse Our Menu
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
           </Link>

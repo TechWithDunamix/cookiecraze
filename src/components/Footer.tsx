@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router'
-import { MapPin, Phone, Mail } from 'lucide-react'
+import { MapPin, Phone, Mail, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -33,8 +33,11 @@ export default function Footer() {
             <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-warm-800/40">Contact</h4>
             <div className="space-y-2 text-sm text-warm-800/60">
               <p className="flex items-center gap-2"><MapPin size={14} /> 42 Cookie Lane, Lagos</p>
-              <p className="flex items-center gap-2"><Phone size={14} /> +234 800 COOKIE</p>
+              <p className="flex items-center gap-2"><Phone size={14} /> +1 443 418 6463</p>
               <p className="flex items-center gap-2"><Mail size={14} /> hello@cookiecraze.com</p>
+              <a href="https://wa.me/14434186463" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-brand-500 transition-colors hover:text-brand-600">
+                <MessageCircle size={14} /> Order via WhatsApp
+              </a>
             </div>
           </div>
         </div>
