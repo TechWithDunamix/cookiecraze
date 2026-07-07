@@ -129,7 +129,49 @@ export default function Landing() {
             </div>
           </div>
         </section>
-      ))}
+      )      )}
+
+      {/* All Occasions */}
+      <section className="px-6 py-20 md:px-12 md:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-14 text-center">
+            <span className="text-xs font-semibold uppercase tracking-widest text-brand-500">Custom Orders</span>
+            <h2 className="font-display mt-3 text-4xl leading-[0.9] tracking-[-1px] md:text-6xl lg:text-7xl">
+              Cookies for <span className="text-brand-500">Every</span> Occasion
+            </h2>
+            <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-warm-800/50">
+              Birthdays, baby showers, football Sundays, holiday parties — whatever you're celebrating, we've got the perfect cookie.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
+            {[
+              { img: '/images/birthday.jpg', title: 'Birthdays', desc: 'Cookie cakes, party boxes, themed designs' },
+              { img: '/images/baby-shower.jpg', title: 'Baby Showers', desc: 'Elegant favors, dessert tables, custom colors' },
+              { img: '/images/fall.jpg', title: 'Fall & Thanksgiving', desc: 'Pumpkin spice, harvest boxes, autumn treats' },
+              { img: '/images/football.jpg', title: 'Football Season', desc: 'Game-day platters, team colors, snack boxes' },
+              { img: '/images/valentine.jpg', title: 'Valentine\'s Day', desc: 'Heart shapes, pink drizzle, love-themed boxes' },
+              { img: '/images/christmas.jpg', title: 'Christmas', desc: 'Holiday tins, peppermint, festive designs' },
+            ].map((occ, i) => (
+              <motion.div
+                key={occ.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className="group relative overflow-hidden rounded-2xl"
+                style={{ aspectRatio: '4/5' }}
+              >
+                <img src={occ.img} alt={occ.title} className="h-full w-full object-cover transition-all duration-500 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
+                  <h3 className="font-display text-lg tracking-wide text-white md:text-xl">{occ.title}</h3>
+                  <p className="mt-1 text-xs text-white/60 md:text-sm">{occ.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Our Bakery — full brand section */}
       <section className="relative overflow-hidden bg-brand-500 px-6 py-20 md:py-32 md:px-12">
