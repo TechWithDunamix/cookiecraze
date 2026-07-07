@@ -4,12 +4,12 @@ import { ArrowRight, MessageCircle } from 'lucide-react'
 import { DottedPattern, WavyLines, WaveDivider } from '../components/DecorativeEffects'
 
 const cookies = [
-  { name: 'Triple Chocolate', tag: 'Dark, milk & white chocolate', price: '$4.00', img: '/images/chocolate-chip.jpg', benefit: 'Best Seller' },
-  { name: 'Cookie Monster', tag: 'Chocolate chips + cookie chunks', price: '$4.00', img: '/images/sugar-cookie.jpg', benefit: 'Fan Favorite' },
-  { name: 'Birthday Cake', tag: 'Funfetti + cream cheese frosting', price: '$4.00', img: '/images/pecan-caramel.jpg', benefit: 'Celebration' },
-  { name: 'Mint Chocolate Chip', tag: 'Cool mint + dark chocolate', price: '$4.00', img: '/images/chocolate-chip.jpg', benefit: 'Refreshing' },
-  { name: 'Matcha White Choc', tag: 'Earthy matcha + white chips', price: '$4.00', img: '/images/sugar-cookie.jpg', benefit: 'Unique' },
-  { name: 'Oatmeal Raisin', tag: 'Oats + cinnamon + honey', price: '$3.50', img: '/images/pecan-caramel.jpg', benefit: 'Wholesome' },
+  { name: 'Triple Chocolate', tag: 'Dark, milk & white chocolate', price: '$4.00', img: '/images/menu-chocolate.jpg', benefit: 'Best Seller' },
+  { name: 'Cookie Monster', tag: 'Chocolate chips + cookie chunks', price: '$4.00', img: '/images/menu-monster.jpg', benefit: 'Fan Favorite' },
+  { name: 'Birthday Cake', tag: 'Funfetti + cream cheese frosting', price: '$4.00', img: '/images/menu-birthday.jpg', benefit: 'Celebration' },
+  { name: 'Mint Chocolate Chip', tag: 'Cool mint + dark chocolate', price: '$4.00', img: '/images/menu-mint.jpg', benefit: 'Refreshing' },
+  { name: 'Matcha White Choc', tag: 'Earthy matcha + white chips', price: '$4.00', img: '/images/menu-matcha.jpg', benefit: 'Unique' },
+  { name: 'Oatmeal Raisin', tag: 'Oats + cinnamon + honey', price: '$3.50', img: '/images/menu-oatmeal.jpg', benefit: 'Wholesome' },
 ]
 
 const flavors = [
@@ -120,7 +120,7 @@ export default function Landing() {
         <section key={f.name} className={`px-6 py-16 md:px-12 md:py-24 ${i % 2 === 1 ? 'bg-warm-50/50' : ''}`}>
           <div className={`mx-auto flex max-w-5xl flex-col items-center gap-8 md:flex-row ${i % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
             <div className="h-48 w-48 shrink-0 overflow-hidden rounded-full md:h-64 md:w-64">
-              <img src={['/images/chocolate-chip.jpg', '/images/sugar-cookie.jpg', '/images/pecan-caramel.jpg', '/images/cookies-hero.jpg'][i]} alt={f.name} className="h-full w-full object-cover" />
+              <img src={['/images/menu-chocolate.jpg', '/images/menu-red-velvet.jpg', '/images/menu-matcha.jpg', '/images/menu-mint.jpg'][i]} alt={f.name} className="h-full w-full object-cover" />
             </div>
             <div className={`flex-1 ${i % 2 === 1 ? 'md:text-right' : ''}`}>
               <span className="text-xs font-semibold uppercase tracking-widest text-brand-500">Flavor {String(i + 1).padStart(2, '0')}</span>

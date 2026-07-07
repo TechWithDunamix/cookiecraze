@@ -5,29 +5,29 @@ const categories = [
   {
     name: 'Our Signature Cookies',
     items: [
-      { name: 'Triple Chocolate', price: '$4.00', desc: 'Three kinds of chocolate — dark, milk, and white — in one decadent, gooey cookie.', tag: 'Best Seller', img: '/images/chocolate-chip.jpg' },
-      { name: 'Cookie Monster', price: '$4.00', desc: 'Packed with chocolate chips, cookie chunks, and a hidden surprise in every bite.', tag: 'Fan Favorite', img: '/images/sugar-cookie.jpg' },
-      { name: 'Birthday Cake', price: '$4.00', desc: 'Funfetti frosting, rainbow sprinkles, and that classic birthday cake taste you love.', tag: 'Celebration', img: '/images/birthday.jpg' },
-      { name: 'Red Velvet', price: '$4.00', desc: 'Velvety cocoa, cream cheese chips, and a drizzle of white chocolate.', tag: 'Decadent', img: '/images/pecan-caramel.jpg' },
-      { name: 'Matcha White Chocolate', price: '$4.00', desc: 'Earthy matcha, creamy white chocolate chips — beautifully balanced.', tag: 'Unique', img: '/images/cookies-hero.jpg' },
-      { name: 'Mint Chocolate Chip', price: '$4.00', desc: 'Cool mint meets rich dark chocolate chunks. Refreshingly indulgent.', tag: 'Refreshing', img: '/images/valentine.jpg' },
-      { name: 'Oatmeal Raisin', price: '$3.50', desc: 'Rolled oats, cinnamon, honey, plump raisins — a timeless classic.', tag: 'Wholesome', img: '/images/fall.jpg' },
+      { name: 'Triple Chocolate', price: '$4.00', desc: 'Three kinds of chocolate — dark, milk, and white — in one decadent, gooey cookie.', tag: 'Best Seller', img: '/images/menu-chocolate.jpg' },
+      { name: 'Cookie Monster', price: '$4.00', desc: 'Packed with chocolate chips, cookie chunks, and a hidden surprise in every bite.', tag: 'Fan Favorite', img: '/images/menu-monster.jpg' },
+      { name: 'Birthday Cake', price: '$4.00', desc: 'Funfetti frosting, rainbow sprinkles, and that classic birthday cake taste you love.', tag: 'Celebration', img: '/images/menu-birthday.jpg' },
+      { name: 'Red Velvet', price: '$4.00', desc: 'Velvety cocoa, cream cheese chips, and a drizzle of white chocolate.', tag: 'Decadent', img: '/images/menu-red-velvet.jpg' },
+      { name: 'Matcha White Chocolate', price: '$4.00', desc: 'Earthy matcha, creamy white chocolate chips — beautifully balanced.', tag: 'Unique', img: '/images/menu-matcha.jpg' },
+      { name: 'Mint Chocolate Chip', price: '$4.00', desc: 'Cool mint meets rich dark chocolate chunks. Refreshingly indulgent.', tag: 'Refreshing', img: '/images/menu-mint.jpg' },
+      { name: 'Oatmeal Raisin', price: '$3.50', desc: 'Rolled oats, cinnamon, honey, plump raisins — a timeless classic.', tag: 'Wholesome', img: '/images/menu-oatmeal.jpg' },
     ],
   },
   {
     name: 'Gluten Free Cookies',
     items: [
-      { name: 'Gluten Free Chocolate Chip', price: '$4.50', desc: 'All the flavor you love — made with gluten-free flour, dark chocolate, love.', tag: 'GF', img: '/images/christmas.jpg' },
-      { name: 'Gluten Free Oatmeal', price: '$4.50', desc: 'Certified gluten-free oats, cinnamon, honey, and raisins.', tag: 'GF', img: '/images/football.jpg' },
-      { name: 'Gluten Free Double Fudge', price: '$5.00', desc: 'Rich cocoa, fudge chunks, completely gluten-free. You won\'t know the difference.', tag: 'GF', img: '/images/baby-shower.jpg' },
+      { name: 'Gluten Free Chocolate Chip', price: '$4.50', desc: 'All the flavor you love — made with gluten-free flour, dark chocolate, love.', tag: 'GF', img: '/images/menu-gf-chip.jpg' },
+      { name: 'Gluten Free Oatmeal', price: '$4.50', desc: 'Certified gluten-free oats, cinnamon, honey, and raisins.', tag: 'GF', img: '/images/menu-gf-oatmeal.jpg' },
+      { name: 'Gluten Free Double Fudge', price: '$5.00', desc: 'Rich cocoa, fudge chunks, completely gluten-free. You won\'t know the difference.', tag: 'GF', img: '/images/menu-gf-fudge.jpg' },
     ],
   },
   {
     name: 'Seasonal & Special Occasions',
     items: [
-      { name: 'Thanksgiving Spice', price: '$4.50', desc: 'Pumpkin spice, warm cinnamon, nutmeg — tastes like November in every bite.', tag: 'Limited', img: '/images/fall.jpg' },
-      { name: 'Valentine\'s Strawberry', price: '$4.50', desc: 'White chocolate, freeze-dried strawberries, pink drizzle.', tag: 'Seasonal', img: '/images/valentine.jpg' },
-      { name: 'Christmas Peppermint', price: '$4.50', desc: 'Crushed peppermint, dark chocolate, snowy white chocolate drizzle.', tag: 'Seasonal', img: '/images/christmas.jpg' },
+      { name: 'Thanksgiving Spice', price: '$4.50', desc: 'Pumpkin spice, warm cinnamon, nutmeg — tastes like November in every bite.', tag: 'Limited', img: '/images/menu-thanksgiving.jpg' },
+      { name: 'Valentine\'s Strawberry', price: '$4.50', desc: 'White chocolate, freeze-dried strawberries, pink drizzle.', tag: 'Seasonal', img: '/images/menu-valentine.jpg' },
+      { name: 'Christmas Peppermint', price: '$4.50', desc: 'Crushed peppermint, dark chocolate, snowy white chocolate drizzle.', tag: 'Seasonal', img: '/images/menu-christmas.jpg' },
     ],
   },
   {
@@ -38,7 +38,7 @@ const categories = [
       { name: 'Football Season', price: 'From $30', desc: 'Team-colored cookies, stadium snack boxes, game-day platters.', tag: 'Order Now', img: '/images/football.jpg' },
       { name: 'Fall & Thanksgiving', price: 'From $35', desc: 'Autumn-themed cookies, pumpkin spice treats, harvest gift boxes.', tag: 'Order Now', img: '/images/fall.jpg' },
       { name: 'Christmas & Holidays', price: 'From $40', desc: 'Holiday cookie boxes, gift tins, festive designs for every occasion.', tag: 'Order Now', img: '/images/christmas.jpg' },
-      { name: 'Custom Requests', price: 'Varies', desc: 'Have a specific theme or occasion? We\'ll create the perfect cookie experience.', tag: 'Contact Us', img: '/images/cookies-hero.jpg' },
+      { name: 'Custom Requests', price: 'Varies', desc: 'Have a specific theme or occasion? We\'ll create the perfect cookie experience.', tag: 'Contact Us', img: '/images/menu-chocolate.jpg' },
     ],
   },
 ]
