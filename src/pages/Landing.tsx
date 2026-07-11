@@ -120,7 +120,7 @@ export default function Landing() {
         <section key={f.name} className={`px-6 py-16 md:px-12 md:py-24 ${i % 2 === 1 ? 'bg-warm-50/50' : ''}`}>
           <div className={`mx-auto flex max-w-5xl flex-col items-center gap-8 md:flex-row ${i % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
             <div className="h-48 w-48 shrink-0 overflow-hidden rounded-full md:h-64 md:w-64">
-              <img src={['/images/menu-chocolate.jpg', '/images/menu-red-velvet.jpg', '/images/menu-matcha.jpg', '/images/menu-mint.jpg'][i]} alt={f.name} className="h-full w-full object-cover" />
+              <img src={['/images/menu-3-chocolate.jpg', '/images/menu-red-velvet-new.jpg', '/images/menu-matcha.jpg', '/images/menu-mint.jpg'][i]} alt={f.name} className="h-full w-full object-cover" />
             </div>
             <div className={`flex-1 ${i % 2 === 1 ? 'md:text-right' : ''}`}>
               <span className="text-xs font-semibold uppercase tracking-widest text-brand-500">Flavor {String(i + 1).padStart(2, '0')}</span>
