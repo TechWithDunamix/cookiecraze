@@ -38,7 +38,7 @@ const categories = [
       { name: 'Football Season', price: 'From $30', desc: 'Team-colored cookies, stadium snack boxes, game-day platters.', tag: 'Order Now', img: '/images/football.jpg' },
       { name: 'Fall & Thanksgiving', price: 'From $35', desc: 'Autumn-themed cookies, pumpkin spice treats, harvest gift boxes.', tag: 'Order Now', img: '/images/fall.jpg' },
       { name: 'Christmas & Holidays', price: 'From $40', desc: 'Holiday cookie boxes, gift tins, festive designs for every occasion.', tag: 'Order Now', img: '/images/christmas.jpg' },
-      { name: 'Custom Requests', price: 'Varies', desc: 'Have a specific theme or occasion? We\'ll create the perfect cookie experience.', tag: 'Contact Us', img: '/images/menu-chocolate.jpg' },
+      { name: 'Custom Requests', price: 'Varies', desc: 'Have a specific theme or occasion? We\'ll create the perfect cookie experience.', tag: 'Contact Us', img: '/images/menu-3-chocolate.jpg' },
     ],
   },
 ]
