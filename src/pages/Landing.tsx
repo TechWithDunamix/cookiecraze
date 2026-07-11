@@ -4,7 +4,7 @@ import { ArrowRight, MessageCircle } from 'lucide-react'
 import { DottedPattern, WavyLines, WaveDivider } from '../components/DecorativeEffects'
 
 const cookies = [
-  { name: 'Triple Chocolate', tag: 'Dark, milk & white chocolate', price: '$4.00', img: '/images/menu-chocolate.jpg', benefit: 'Best Seller' },
+  { name: 'Triple Chocolate', tag: 'Dark, milk & white chocolate', price: '$4.00', img: '/images/menu-3-chocolate.jpg', benefit: 'Best Seller' },
   { name: 'Cookie Monster', tag: 'Chocolate chips + cookie chunks', price: '$4.00', img: '/images/menu-monster.jpg', benefit: 'Fan Favorite' },
   { name: 'Birthday Cake', tag: 'Funfetti + cream cheese frosting', price: '$4.00', img: '/images/menu-birthday.jpg', benefit: 'Celebration' },
   { name: 'Mint Chocolate Chip', tag: 'Cool mint + dark chocolate', price: '$4.00', img: '/images/menu-mint.jpg', benefit: 'Refreshing' },

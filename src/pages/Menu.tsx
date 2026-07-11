@@ -5,10 +5,10 @@ const categories = [
   {
     name: 'Our Signature Cookies',
     items: [
-      { name: 'Triple Chocolate', price: '$4.00', desc: 'Three kinds of chocolate — dark, milk, and white — in one decadent, gooey cookie.', tag: 'Best Seller', img: '/images/menu-chocolate.jpg' },
+      { name: 'Triple Chocolate', price: '$4.00', desc: 'Three kinds of chocolate — dark, milk, and white — in one decadent, gooey cookie.', tag: 'Best Seller', img: '/images/menu-3-chocolate.jpg' },
       { name: 'Cookie Monster', price: '$4.00', desc: 'Packed with chocolate chips, cookie chunks, and a hidden surprise in every bite.', tag: 'Fan Favorite', img: '/images/menu-monster.jpg' },
       { name: 'Birthday Cake', price: '$4.00', desc: 'Funfetti frosting, rainbow sprinkles, and that classic birthday cake taste you love.', tag: 'Celebration', img: '/images/menu-birthday.jpg' },
-      { name: 'Red Velvet', price: '$4.00', desc: 'Velvety cocoa, cream cheese chips, and a drizzle of white chocolate.', tag: 'Decadent', img: '/images/menu-red-velvet.jpg' },
+      { name: 'Red Velvet', price: '$4.00', desc: 'Velvety cocoa, cream cheese chips, and a drizzle of white chocolate.', tag: 'Decadent', img: '/images/menu-red-velvet-new.jpg' },
       { name: 'Matcha White Chocolate', price: '$4.00', desc: 'Earthy matcha, creamy white chocolate chips — beautifully balanced.', tag: 'Unique', img: '/images/menu-matcha.jpg' },
       { name: 'Mint Chocolate Chip', price: '$4.00', desc: 'Cool mint meets rich dark chocolate chunks. Refreshingly indulgent.', tag: 'Refreshing', img: '/images/menu-mint.jpg' },
       { name: 'Oatmeal Raisin', price: '$3.50', desc: 'Rolled oats, cinnamon, honey, plump raisins — a timeless classic.', tag: 'Wholesome', img: '/images/menu-oatmeal.jpg' },

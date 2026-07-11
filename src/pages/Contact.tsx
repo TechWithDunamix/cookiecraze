@@ -17,10 +17,10 @@ export default function Contact() {
         <div className="flex flex-col gap-10 md:flex-row">
           <div className="grid flex-1 gap-5 md:grid-cols-2">
             {[
-              { icon: MapPin, title: 'Location', content: '42 Cookie Lane\nVictoria Island, Lagos' },
+              { icon: MapPin, title: 'Location', content: '42 Cookie Lane\nBrooklyn, New York, USA' },
               { icon: Clock, title: 'Hours', content: 'Mon–Fri: 7AM – 9PM\nSat: 8AM – 10PM\nSun: 9AM – 6PM' },
               { icon: Phone, title: 'Phone', content: '+1 443 418 6463\nOrder via WhatsApp' },
-              { icon: Mail, title: 'Email', content: 'hello@cookiecraze.com\norder@cookiecraze.com' },
+              { icon: Mail, title: 'Email', content: 'halchar27@cookiecraze.site\norder@cookiecraze.com' },
             ].map((info, i) => (
               <motion.div
                 key={info.title}
