@@ -1,8 +1,20 @@
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 import { MapPin, Clock, Phone, Mail, Send, ArrowRight, MessageCircle } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 
 export default function Contact() {
+  const [form, setForm] = useState({ name: '', email: '', message: '' })
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    const subject = encodeURIComponent(`Message from ${form.name} - Cookie Craze`)
+    const body = encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
+    )
+    window.location.href = `mailto:hello@cookiecraze.com?subject=${subject}&body=${body}`
+  }
+
   return (
     <section className="pt-24 pb-24">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
@@ -47,10 +59,10 @@ export default function Contact() {
             <div className="rounded-2xl border border-warm-200/40 bg-warm-50/50 p-7">
               <h3 className="font-display text-xl tracking-wide">Send a Message</h3>
               <p className="mt-1 text-xs text-warm-800/40">We'll get back within 24 hours.</p>
-              <form className="mt-6 space-y-4" onSubmit={(e) => e.preventDefault()}>
-                <input type="text" placeholder="Your Name" className="w-full rounded-xl border border-warm-200/60 bg-white px-4 py-3 text-sm text-warm-900 placeholder:text-warm-800/30 outline-none transition-all duration-200 focus:border-brand-400" />
-                <input type="email" placeholder="Your Email" className="w-full rounded-xl border border-warm-200/60 bg-white px-4 py-3 text-sm text-warm-900 placeholder:text-warm-800/30 outline-none transition-all duration-200 focus:border-brand-400" />
-                <textarea rows={4} placeholder="Your Message" className="w-full rounded-xl border border-warm-200/60 bg-white px-4 py-3 text-sm text-warm-900 placeholder:text-warm-800/30 outline-none transition-all duration-200 focus:border-brand-400 resize-none" />
+              <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
+                <input type="text" placeholder="Your Name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full rounded-xl border border-warm-200/60 bg-white px-4 py-3 text-sm text-warm-900 placeholder:text-warm-800/30 outline-none transition-all duration-200 focus:border-brand-400" />
+                <input type="email" placeholder="Your Email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="w-full rounded-xl border border-warm-200/60 bg-white px-4 py-3 text-sm text-warm-900 placeholder:text-warm-800/30 outline-none transition-all duration-200 focus:border-brand-400" />
+                <textarea rows={4} placeholder="Your Message" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="w-full rounded-xl border border-warm-200/60 bg-white px-4 py-3 text-sm text-warm-900 placeholder:text-warm-800/30 outline-none transition-all duration-200 focus:border-brand-400 resize-none" />
                 <button type="submit" className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-choco-600 px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-choco-500">
                   Send <Send size={14} className="transition-transform group-hover:translate-x-0.5" />
                 </button>
